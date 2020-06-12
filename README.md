@@ -5,11 +5,11 @@
 
 ### Create 4 volumes for backups
 
-docker volume create dokuwiki-data
-docker volume create dokuwiki-conf
-docker volume create dokuwiki-tpl
-docker volume create dokuwiki-plugins
-
+docker volume create dokuwiki-data \
+docker volume create dokuwiki-conf \
+docker volume create dokuwiki-tpl \
+docker volume create dokuwiki-plugins \
+\
 docker run \
     --publish 8100:8080 \
     --name dokuwiki \
