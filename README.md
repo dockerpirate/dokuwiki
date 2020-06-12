@@ -24,8 +24,13 @@ docker run \
 
 You can now visit the install page to configure your new DokuWiki wiki.
 
-For example, if you are running container locally, you can acces the page in browser by going to http://localhost/install.php 
+For example, if you are running container locally, you can acces the page in browser by going to http://localhost/install.php
 
+After that remove it.
+
+### Troubleshooting
+
+If upgrading from v2018, you have to remove old conf and plugins folders
 
 ### License
 
