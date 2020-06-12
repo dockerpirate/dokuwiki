@@ -26,7 +26,7 @@ You can now visit the install page to configure your new DokuWiki wiki.
 
 For example, if you are running container locally, you can acces the page in browser by going to http://localhost/install.php
 
-After that remove it.
+After that remove install.php from /srv it.
 
 ### Troubleshooting
 
