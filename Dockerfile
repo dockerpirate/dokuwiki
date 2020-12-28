@@ -2,7 +2,7 @@ FROM alpine:3.12
 MAINTAINER nobody
 
 ARG BUILD_DATE
-ARG VERSION=2020-RC
+ARG VERSION=2020-Hogfather
 ARG VCS_REF
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
@@ -14,7 +14,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 
 RUN apk --no-cache add lighttpd libgd php7-cgi php7-curl php7-gd php7-json php7-session \
 		php7-openssl php7-xml php7-zlib curl tar \
-	&& curl -sL https://download.dokuwiki.org/src/dokuwiki/dokuwiki-rc.tgz \
+	&& curl -sL https://download.dokuwiki.org/src/dokuwiki/dokuwiki-stable.tgz \
 		| tar xz -C /srv --strip-components=1 \
 	&& chown -R lighttpd. /srv \
     && apk del curl tar \
