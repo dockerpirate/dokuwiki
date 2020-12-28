@@ -8,7 +8,7 @@ if [ "$TRAVIS_PULL_REQUEST" = "true" ] || [ "$TRAVIS_BRANCH" != "master" ]; then
   exit $?
 fi
 echo $DOCKER_PASSWORD | docker login -u dockerpirate --password-stdin &> /dev/null
-TAG="v2020_7rc-312"
+TAG="v2020_07-312"
 docker buildx build \
      --progress plain \
     --platform=linux/arm64,linux/arm/v7,linux/arm/v6 \
