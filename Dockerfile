@@ -2,7 +2,7 @@ FROM alpine:3.12
 MAINTAINER nobody
 
 ARG BUILD_DATE
-ARG VERSION=2020-Hogfather
+ARG VERSION=2020-07-Hogfather
 ARG VCS_REF
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
